@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming Site</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8d7c0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .navbar h1 {
+            color: #ff7b42;
+            font-size: 1.5rem;
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            min-height: 50vh;
+            justify-content: center;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+            color: #ff7b42;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff7b42;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        /* Most Popular Section */
+        .popular {
+            margin-top: 40px;
+        }
+        .popular h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 100%;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Responsive Styling */
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                text-align: left;
+                padding: 60px;
+            }
+            .hero img {
+                margin-right: 20px;
+                width: 200px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .cards {
+                flex-wrap: nowrap;
+            }
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>NIMEKSTREAM</h1>
+        <div>
+            <a href="#">About</a>
+            <a href="#">Anime</a>
+            <a href="#">Manga</a>
+            <a href="#">Community</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="image-removebg-preview.png" alt="Anime Characters">
+        <div>
+            <h1>Streaming Anime dengan kualitas tinggi hanya di NIMEKSTREAM</h1>
+        </div>
+    </section>
+
+    <!-- Most Popular Section -->
+    <section class="popular">
+        <h2>Most Popular</h2>
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="JJKCOVER.jpg" alt="Jujutsu Kaisen">
+                <h3>Jujutsu Kaisen</h3>
+                <p>Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege Akutami.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="OPCOVER.jpg" alt="One Piece">
+                <h3>One Piece</h3>
+                <p>One Piece has gained immense popularity with its action-packed story.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="ROGCOVER.jpg" alt="Record Of Ragnarok">
+                <h3>Record Of Ragnarok</h3>
+                <p>A Japanese manga series written by Shinya Umemura and Takumi Fukui and illustrated by Azychika.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
